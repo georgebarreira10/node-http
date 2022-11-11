@@ -1,6 +1,14 @@
 const express = require('express')
 
 const app = express()
+
+const db = require('./db/dbConfig')
+db.once('open', () => {
+
+console.log('Conexao realizada com sucesso!')
+
+})
+
 const hostname = '192.168.3.54'
 const port = 5000
 
