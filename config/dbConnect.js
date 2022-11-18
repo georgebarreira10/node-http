@@ -1,5 +1,3 @@
-// getting-started.js
-
 const mongoose = require('mongoose');
 
 // com a impotação do modulo externo do mongoose, podemos chamar a partir da variavel mongoose, ometodo connect()
