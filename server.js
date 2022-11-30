@@ -5,6 +5,8 @@ const app = express()
 const db = require('./config/dbConnect')
 const livros = require("./models/Livro")
 
+db.on('error', console.log.bind(console, 'Erro ao conectar o banco!'))
+
 db.once('open', () => {
 
     console.log('Conexao realizada com sucesso!')
